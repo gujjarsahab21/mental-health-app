@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { UserContext } from "../context/UserContext";
 
 function Header() {
+  const { user } = useContext(UserContext);
+
   return (
     <nav className="nav" id="nav">
       <div>
@@ -16,19 +19,23 @@ function Header() {
             <a href="#">HOME</a>
           </li>
           <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
             <a href="#services">SERVICES </a>
           </li>
           <li>
-            <a href="html/contact.html">CONTACT US </a>
+            <a href="#">CONTACT US </a>
           </li>
         </ul>
       </div>
-      <button className="login-button">
-        <Link to="/login">Login</Link>
-      </button>
+      {!user ? (
+        <button className="login-button">
+          <Link to="/login">Login</Link>
+        </button>
+      ) : (
+        <button className="login-button">
+          <Link to="/logout">Logout</Link>
+        </button>
+      )}
+
       <div className="hamburger" id="ham">
         <i className="cancel fa-solid fa-xmark"></i>
 

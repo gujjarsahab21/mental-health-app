@@ -93,7 +93,7 @@ body {
   box-shadow: 5px -1px 12px -5px grey;
 }
 
-header {
+header.home-header {
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("../images/landing-page.jpg");

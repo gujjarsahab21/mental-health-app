@@ -27,15 +27,15 @@ function Footer() {
                 <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">
+                <a href="#">
                   Code Of Conduct
                 </a>
               </li>
               <li>
-                <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+                <a href="#">Contribute</a>
               </li>
               <li>
-                <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+                <a href="#">Donate</a>
               </li>
             </ul>
           </div>
@@ -48,32 +48,32 @@ function Footer() {
             </h3>
             <ul>
               <li>
-                <a href="https://sukoon-stress-free.netlify.app/html/readingtherapy">
+                <a href="">
                   Reading Therapy
                 </a>
               </li>
               <li>
-                <a href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html">
+                <a href="">
                   Yoga Therapy
                 </a>
               </li>
               <li>
-                <a href="https://sukoon-stress-free.netlify.app/html/laughTherapy.html">
+                <a href="">
                   Laughing Therapy
                 </a>
               </li>
               <li>
-                <a href="https://www.practo.com/counselling-psychology">
+                <a href="">
                   Consult a Doctor
                 </a>
               </li>
               <li>
-                <a href="https://sukoon-stress-free.netlify.app/html/childTherapy">
+                <a href="">
                   Child Therapy
                 </a>
               </li>
               <li>
-                <a href="https://sukoon-stress-free.netlify.app/html/specialTherapy">
+                <a href="">
                   Special Therapy
                 </a>
               </li>
