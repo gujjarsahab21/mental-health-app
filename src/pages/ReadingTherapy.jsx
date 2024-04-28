@@ -3,16 +3,10 @@ import React from 'react';
 function ReadingTherapy() {
   return (
     <div>
-      <div id="load">
-        <div style={{ backgroundColor: 'white', height: '25vh', width: '100%', position: 'relative', top: '-70px' }}></div>
-      </div>
-      <div id="back-top-div" className="back-top-wrap">
-        <i className="fas fa-arrow-up"></i>
-      </div>
       <header>
         <nav className="navbar">
           <div>
-            <a href="https://sukoon-stress-free.netlify.app"><img src="../logo.png" className="icon" alt="" /></a>
+            <a href=""><img src="../logo.png" className="icon" alt="" /></a>
           </div>
           <div className="nav-links" id="navLinks">
             <ul>

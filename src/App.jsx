@@ -8,6 +8,7 @@ import YogaTherapy from './pages/YogaTherapy'
 import ReadingTherapy from './pages/ReadingTherapy'
 import LaughingTherapy from './pages/LaughTherapy'
 import ChildTherapy from './pages/ChildTherapy'
+import AudioTherapy from './pages/AudioTherapy'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/laugh" element={<LaughingTherapy/>} />
         <Route path="/reading" element={<ReadingTherapy/>} />
         <Route path="/child" element={<ChildTherapy/>} />
+        <Route path="/audio" element={<AudioTherapy/>} />
 
       </Routes>
     </BrowserRouter>
