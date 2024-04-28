@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import ChatBot from './pages/ChatBot'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/"  element={<Home/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/chat" element={<ChatBot/>} />
       </Routes>
     </BrowserRouter>
   )
