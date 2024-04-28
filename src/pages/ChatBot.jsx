@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { assets } from "../assets/chat/assets.js";
 import "../styles/chat.css";
 import axios from "axios";
+import botIcon from "../assets/bot.png"
 
 function ChatBot() {
     const [messages,  setmessages] = useState([]);
@@ -30,11 +31,8 @@ function ChatBot() {
         <>
             <div className="MainBox">
                 <div className="Center">
-                    <div className="nav">
-                        <img className="logo" src={assets.name_logo_icon} alt="" />
-                        <div onClick="" className="new-chat">
-                            <img src={assets.plus_icon} alt="" />
-                        </div>
+                    <div className="navbar">
+                        <img className="logo" src={botIcon} alt="" /> Sukoon
                     </div>
                     <div className="result-container">
                         {messages.map((message, i) => (
@@ -52,9 +50,9 @@ function ChatBot() {
                             </div>
                         ))}
                     </div>
-                    <div className="main-bottom">
+                    <div className="chat-bottom">
                         <form className="search-box" onSubmit={handleSubmit}>
-                            <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" />
+                            <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" spellCheck={false}/>
                             <div className="imagesection">
                                 <img src={assets.mic_icon} alt="" />
                                 {input ? (

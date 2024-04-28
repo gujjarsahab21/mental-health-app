@@ -4,6 +4,8 @@ import Footer from '../components/Footer'
 import Services from '../components/Services'
 import FAQ from '../components/FAQ'
 import "../styles/home.css"
+import botIcon from "../assets/bot.png"
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -18,6 +20,9 @@ function Home() {
       <a href="#services" className="rainbow-button" alt="Explore"></a>
     </div>
     </header>
+    <div className='bot-btn'>
+      <Link to="/chat"><img src={botIcon}/></Link>
+    </div>
     <Services/>
     <FAQ/>
     <Footer />
