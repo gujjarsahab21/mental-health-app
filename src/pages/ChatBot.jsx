@@ -4,23 +4,25 @@ import "../styles/chat.css";
 import axios from "axios";
 
 function ChatBot() {
-    const [resultData, setResultData] = useState("");
-    const [recentPrompt, setRecentPrompt] = useState("");
+    const [messages,  setmessages] = useState([]);
     const [input, setInput] = useState("");
-    const [showResult, setShowResult] = useState(true);
     const [loading, setLoading] = useState(true);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.get("/get", { params: { msg: input } });
-            if (response.status === 200) {
+            const response = await axios.get(`http://localhost:5000/get?msg=${input}`);
+            if (response.status == 200) {
                 console.log(response.data);
-                setResultData(response.data);
+                const message = {
+                    sender: input,
+                    bot: response.data
+                }
+                setmessages([...messages, message]);
+                setInput("");
             }
         } catch (error) {
-            console.error("An error occurred:", error);
-            // Handle the error here
+            console.log("An error occurred:", error.message);
         }
     };
 
@@ -35,53 +37,20 @@ function ChatBot() {
                         </div>
                     </div>
                     <div className="result-container">
-                        {!showResult ? (
-                            <>
-                                <div className="greet">
-                                    <p><span>Hello, Student.</span></p>
-                                    <p>How can I help you today?</p>
-                                </div>
-                                <div className="cards">
-                                    <div className="card">
-                                        <p>Suggest beautiful places to see on an upcoming road trip</p>
-                                        <img src={assets.compass_icon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <p>Create a PowerPoint Presentation on Evolution of AI.</p>
-                                        <img src={assets.bulb_icon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <p>Create a beautiful message for wishing birthday.</p>
-                                        <img src={assets.message_icon} alt="" />
-                                    </div>
-                                    <div className="card">
-                                        <p>Write a program to find the largest element in an array.</p>
-                                        <img src={assets.code_icon} alt="" />
-                                    </div>
-                                </div>
-                            </>
-                        ) : (
+                        {messages.map((message, i) => (
                             <div className="result">
                                 <div className="result-title">
                                     <img src={assets.user_icon} alt="" />
-                                    <div>{recentPrompt}</div>
+                                    <div>{message.sender}</div>
                                 </div>
                                 <div className="result-data">
                                     <img src={assets.logo_icon} alt="" />
                                     <div>
-                                        {loading ? (
-                                            <div className="loader">
-                                                <hr />
-                                                <hr />
-                                                <hr />
-                                            </div>
-                                        ) : (
-                                            resultData
-                                        )}
+                                        {message.bot}
                                     </div>
                                 </div>
                             </div>
-                        )}
+                        ))}
                     </div>
                     <div className="main-bottom">
                         <form className="search-box" onSubmit={handleSubmit}>
