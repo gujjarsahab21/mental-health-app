@@ -1,0 +1,99 @@
+/* Your CSS styles */
+
+/* Add your custom CSS styles here */
+
+/* Styling for the videos */
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  .video {
+    width: calc(50% - 20px); /* Adjust width and margins as needed */
+    margin-bottom: 20px; /* Adjust spacing between videos */
+  }
+  
+  /* Styling for the footer */
+  footer {
+    background-color: #222; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 40px 20px; /* Adjust padding as needed */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .footerheading {
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  .footerpara {
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+  
+  .col h3 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+  }
+  
+  .col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .col ul li {
+    margin-bottom: 5px; /* Adjust spacing as needed */
+  }
+  
+  .underline {
+    height: 3px; /* Set underline height */
+    background-color: #fff; /* Set underline color */
+    width: 50px; /* Set underline width */
+  }
+  
+  .social-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-menu ul a {
+    color: #fff; /* Set social icon color */
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
+  
+  .social-menu ul a:hover {
+    color: #ccc; /* Set hover color */
+  }
+
+  /* Your CSS styles */
+
+/* Reduce the size of memes */
+.mySlides img {
+    max-width: 100%; /* Adjust maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Reduce the size of standup videos */
+
+  /* Adjust size of memes container */
+  .slideshow-container {
+    max-width: 60%; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  /* Your CSS styles */
+
+/* Center the words "MEMES" and "STANDUPS" */
+.section-headings {
+    text-align: center;
+  }
+  

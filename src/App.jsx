@@ -20,13 +20,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<NoAuth><Login /></NoAuth>} />
         <Route path="/signup" element={<NoAuth><Signup /></NoAuth>} />
-        <Route path="/" element={<Auth />} >
         <Route path="/chat" element={<ChatBot />} />
           <Route path="/yoga" element={<YogaTherapy />} />
           <Route path="/laugh" element={<LaughingTherapy />} />
           <Route path="/reading" element={<ReadingTherapy />} />
           <Route path="/child" element={<ChildTherapy />} />
           <Route path="/audio" element={<AudioTherapy />} />
+        <Route path="/" element={<Auth />} >
         </Route>
       </Routes>
     </BrowserRouter>

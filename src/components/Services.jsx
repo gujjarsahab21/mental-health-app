@@ -1,6 +1,5 @@
 import React from "react";
-import SpecialTherapy  from "../assets/specialtherapy.jpg"
-import SpritualTherapy  from "../assets/spiritualtherapy.jpg"
+import audioTherapy from "../assets/audio.png";
 import laughing  from "../assets/laughing.png"
 import child  from "../assets/child.jpg" 
 import reading from '../assets/reading.png'
@@ -12,19 +11,7 @@ function Services() {
     <section id="services">
       <h1>Our Services</h1>
       <div className="container">
-        <div className="responsive reading">
-          <div className="round-image">
-            <img src={reading} alt="read" loading="lazy" />
-          </div>
-          <div className="description">
-            <h2>Reading Therapy</h2>
-            <p>
-              Motivational quotes and books can help us to divert and change our
-              mood.
-            </p>
-            <a href="html/readingTherapy.html">Let's Explore</a>
-          </div>
-        </div>
+      
         <div className="responsive yoga">
           <div className="round-image">
             <img src={yogaTherapy} alt="yoga" loading="lazy" />
@@ -32,7 +19,7 @@ function Services() {
           <div className="description">
             <h2>Yoga Therapy</h2>
             <p>Yoga and exercise plays a very important role in our lives.</p>
-            <a href="html/yogatherapy.html">Let's Explore</a>
+            <a href="/yoga">Let's Explore</a>
           </div>
         </div>
         <div
@@ -44,7 +31,7 @@ function Services() {
           <div className="description">
             <h2>Laughing Therapy</h2>
             <p>Laughing is the only medicine which refreshes our mind.</p>
-            <a href="html/laughTherapy.html">Let's Explore</a>
+            <a href="/laugh">Let's Explore</a>
           </div>
         </div>
         <div className="responsive doctor">
@@ -66,24 +53,38 @@ function Services() {
           <div className="description">
             <h2>Child Therapy</h2>
             <p>Children make us forget about worries with their innocence.</p>
-            <a href="./html/childTherapy.html">Let's Explore</a>
+            <a href="/child">Let's Explore</a>
+          </div>
+        </div>
+        <div className="responsive reading">
+          <div className="round-image">
+            <img src={reading} alt="read" loading="lazy" />
+          </div>
+          <div className="description">
+            <h2>Reading Therapy</h2>
+            <p>
+              Motivational quotes and books can help us to divert and change our
+              mood.
+            </p>
+            <a href="./reading">Let's Explore</a>
           </div>
         </div>
         <div className="responsive special">
           <div className="round-image">
             <img
-              src={SpecialTherapy}
+              src={audioTherapy}
               alt="special"
               loading="lazy"
             />
           </div>
           <div className="description">
-            <h2>Special Therapy</h2>
+            <h2>Audio Therapy</h2>
             <p>If you need special attention and help from us.</p>
-            <a href="./html/specialTherapy.html" target="_blank">
+            <a href="/audio">
               Let's Explore
             </a>
           </div>
+          
         </div>
       </div>
     </section>

@@ -6,34 +6,34 @@ function ReadingTherapy() {
       <header>
         <nav className="navbar">
           <div>
-            <a href=""><img src="../logo.png" className="icon" alt="" /></a>
+            <a href="/"><img src="../logo.png" className="icon" alt="" /></a>
           </div>
           <div className="nav-links" id="navLinks">
             <ul>
               <li><a href="/index.html">HOME</a></li>
               <li><a href="#articles" className="smooth-scroll">ARTICLES</a></li>
-              <li><a href="#quotes" className="smooth-scroll">QUOTES </a></li>
+              <li><a href="#quotes" className="smooth-scroll">QUOTES</a></li>
               <li><a href="#summary" className="smooth-scroll">SUMMARIES</a></li>
-              <li><a href="#reading" className="smooth-scroll">BOOKS </a></li>
+              <li><a href="#reading" className="smooth-scroll">BOOKS</a></li>
             </ul>
           </div>
-          <div className="hamburger" id="ham">
-            <svg stroke="currentColor" fill="currentColor" strokeWidth   viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          {/* <div className="hamburger" id="ham">
+            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
             </svg>
-          </div>
+          </div> */}
         </nav>
-        <div className="menu" id="menu">
+        {/* <div className="menu" id="menu">
           <ul className="menu-link">
             <li><a href="/index.html">HOME</a></li>
             <li><a href="#articles">ARTICLES</a></li>
-            <li><a href="#quotes">QUOTES </a></li>
+            <li><a href="#quotes">QUOTES</a></li>
             <li><a href="#summary">SUMMARIES</a></li>
-            <li><a href="#reading">BOOKS </a></li>
+            <li><a href="#reading">BOOKS</a></li>
           </ul>
-        </div>
+        </div> */}
         <div className="contain">
-          <img className="image" src="https://images2.alphacoders.com/261/thumb-1920-26102.jpg" style={{ width: '100%', height: '40%' }} />
+          <img className="image" src="https://images2.alphacoders.com/261/thumb-1920-26102.jpg" style={{ width: '100%', height: '40%' }} alt="Reading Therapy" />
           <div className="center">
             <h1 id="title"><span className="heading-starting">Welcome to Our </span><span className="heading-title">Reading Therapy</span><img className="reading1" src="../images/reading1.png" alt="" /></h1>
             <h3 id="subtitle">Read Articles, Motivational Quotes and listen to summaries of famous books <br /> to gain some happiness, knowledge and also lighten your stress side by side.</h3>
@@ -52,11 +52,11 @@ function ReadingTherapy() {
             <div className="card" style={{ top: '-20rem', marginLeft: '13rem', width: '450px', height: '300px' }}>
               <h3 className="subtitle" style={{ color: 'white' }}>
                 <p className="benefit-points">Reduces stress</p>
-                <p className="benefit-points"> Increases your ability to empathize</p>
-                <p className="benefit-points"> Helps prevent age-related cognitive decline</p>
-                <p className="benefit-points"> Builds your vocabulary</p>
-                <p className="benefit-points"> Prepares you for a good night’s rest</p>
-                <p className="benefit-points"> Helps alleviate depression symptoms</p>
+                <p className="benefit-points">Increases your ability to empathize</p>
+                <p className="benefit-points">Helps prevent age-related cognitive decline</p>
+                <p className="benefit-points">Builds your vocabulary</p>
+                <p className="benefit-points">Prepares you for a good night’s rest</p>
+                <p className="benefit-points">Helps alleviate depression symptoms</p>
               </h3>
             </div>
           </div>
@@ -66,36 +66,22 @@ function ReadingTherapy() {
           <h2>Inspirational Stories</h2>
           <div className="collection">
             <div className="playlist">
-              <iframe src="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/"     width="100%" height="380px"></iframe>
+              {/* <iframe title="Inspirational Stories 1" src="https://ahigherthought.com/the-best-way-to-refresh-mind-body-soul/" width="100%" height="380px"></iframe>
             </div>
             <div className="playlist">
-              <iframe src="https://www.developgoodhabits.com/inspirational-stories/"     width="100%" height="380px"></iframe>
+              <iframe title="Inspirational Stories 2" src="https://www.developgoodhabits.com/inspirational-stories/" width="100%" height="380px"></iframe>
             </div>
             <div className="playlist">
-              <iframe src="https://www.whatsdannydoing.com/blog/short-inspirational-stories-with-a-moral"     width="100%" height="380px"></iframe>
+              <iframe title="Inspirational Stories 3" src="https://www.whatsdannydoing.com/blog/short-inspirational-stories-with-a-moral" width="100%" height="380px"></iframe>
             </div>
             <div className="playlist">
-              <iframe src="https://www.theintelligentoptimist.com/2022/01/15-stories-to-boost-your-spirit"     width="100%" height="380px"></iframe>
+              <iframe title="Inspirational Stories 4" src="https://www.theintelligentoptimist.com/2022/01/15-stories-to-boost-your-spirit" width="100%" height="380px"></iframe> */}
             </div>
           </div>
         </section>
         <section id="quotes">
           <h1 style={{ fontSize: '2.3rem' }}>Quotes</h1>
           <div className="quote-container">
-            <div className="quote-card">
-              <div>
-                <i className="fas fa-quote-left"></i>
-                <p>“The only way to do great work is to love what you do.”</p>
-                <i className="fas fa-quote-right"></i>
-              </div>
-            </div>
-            <div className="quote-card">
-              <div>
-                <i className="fas fa-quote-left"></i>
-                <p>“You don’t have to be great to start, but you have to start to be great.”</p>
-                <i className="fas fa-quote-right"></i>
-              </div>
-            </div>
             <div className="quote-card">
               <div>
                 <i className="fas fa-quote-left"></i>
@@ -133,7 +119,7 @@ function ReadingTherapy() {
           <h1 style={{ fontSize: '2.3rem' }}>Books</h1>
           <div className="book-container">
             <div className="book-card">
-              <img src="../images/alchemist.jpg" alt="" />
+              <img src="../images/alchemist.jpg" alt="The Alchemist" />
               <div className="content">
                 <h2>The Alchemist</h2>
                 <p>Paulo Coelho</p>
@@ -141,7 +127,7 @@ function ReadingTherapy() {
               </div>
             </div>
             <div className="book-card">
-              <img src="../images/think_and_grow_rich.jpg" alt="" />
+              <img src="../images/think_and_grow_rich.jpg" alt="Think and Grow Rich" />
               <div className="content">
                 <h2>Think and Grow Rich</h2>
                 <p>Napoleon Hill</p>

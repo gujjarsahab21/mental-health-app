@@ -7,37 +7,16 @@ import yoga1 from "../assets/yoga1.webp";
 import yoga2 from "../assets/yoga2.webp";
 import yoga3 from "../assets/yoga3.webp";
 import Footer from "../components/Footer";
+import Header from "../components/Header.jsx";
 
 function YogaTherapy() {
     return (
         <>
         
 
-            <nav>
-                <a href="../index.html"><img className="logo" src={logo} alt="Logo" width={370} /></a>
+       <Header/>
 
-                <div className="nav-links" id="navLinks">
-                    <ul >
-                        <li><a href="../index.html">HOME</a></li>
-                        <li><a href="#benefits">BENEFITS</a></li>
-                        <li><a href="#aasan">AASANS</a></li>
-                        <li><a href="#videos">VIDEOS</a></li>
-                    </ul>
-                </div>
-
-                <div className="hamburger" id="ham">
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
-                </div>
-            </nav>
-
-            <div className="menu" id="menu">
-                <ul className="menu-link">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a className="close" href="#benefits">BENEFITS</a></li>
-                    <li><a className="close" href="#aasan">AASANS</a></li>
-                    <li><a className="close" href="#videos">VIDEOS</a></li>
-                </ul>
-            </div>
+  
 
             <header>
                 <div className="filter"></div>
@@ -51,25 +30,8 @@ function YogaTherapy() {
                 </div>
             </header>
 
-            <section className="benefits" id="benefits">
-                <div className="col-md-12 text-center">
-                    <h1><strong>Benefits of Yoga</strong></h1>
-                </div>
-                <div className="bfit">
-                    <img src={assets.aboutImage} width="700" height="600" />
-                    <ul className="btext">
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga benefits in <strong>weight loss</strong></h3></li>  
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga is one of the best solutions for <strong>stress relief</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga helps for <strong>inner peace</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga Improves <strong>immunity</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Practice of Yoga Offers <strong>awareness</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga improves <strong>relationships</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga Increases <strong>energy</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga Gives you Better <strong>flexibility and posture</strong></h3></li>
-                        <li className="yoga-text"><h3>• </h3><h3>Yoga helps in improving <strong>intuition</strong></h3></li>
-                    </ul>
-                </div>
-            </section>
+
+
 
             <section className="aasan" id="aasan">
     <div className="row">
