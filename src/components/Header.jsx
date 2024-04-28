@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Header() {
   return (
     <nav className="nav" id="nav">
       <div>
-        <a className="navbar-brand" href="#!">
-          {" "}
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="Logo" className="logo" />
-        </a>
+        </Link>
       </div>
       <div className="nav-links" id="navLinks">
         <ul className="links" id="navmenu">
@@ -27,7 +27,7 @@ function Header() {
         </ul>
       </div>
       <button className="login-button">
-        <a href="html/login.html">SignUp / Login</a>
+        <Link to="/login">Login</Link>
       </button>
       <div className="hamburger" id="ham">
         <i className="cancel fa-solid fa-xmark"></i>
