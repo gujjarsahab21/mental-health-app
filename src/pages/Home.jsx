@@ -11,9 +11,9 @@ function Home() {
     <header>
     <Header/>
     <div className="content">
-      <h1>Welcome to Health Care</h1>
+      <h1>Welcome to RAHAT Health Care</h1>
       <div className="container">
-        <h3>The one-step solution to get relief from your stress. Live a stress-free life!</h3>
+        <h3>The one-step solution to get relief from your mental stress. Live a stress-free life!</h3>
       </div>
       <a href="#services" className="rainbow-button" alt="Explore"></a>
     </div>
