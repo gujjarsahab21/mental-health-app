@@ -56,19 +56,6 @@ function Services() {
             <a href="/child">Let's Explore</a>
           </div>
         </div>
-        <div className="responsive reading">
-          <div className="round-image">
-            <img src={reading} alt="read" loading="lazy" />
-          </div>
-          <div className="description">
-            <h2>Reading Therapy</h2>
-            <p>
-              Motivational quotes and books can help us to divert and change our
-              mood.
-            </p>
-            <a href="./reading">Let's Explore</a>
-          </div>
-        </div>
         <div className="responsive special">
           <div className="round-image">
             <img

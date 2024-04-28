@@ -6,9 +6,8 @@ import Footer from "../components/Footer";
 function AudioTherapy() {
   return (
     <>
-      <header>
+      <header className="audio-header">
         <Header />
-        <div className="filter"></div>
         <div className="center">
           <h1 id="title">
             Welcome to Our <br />
