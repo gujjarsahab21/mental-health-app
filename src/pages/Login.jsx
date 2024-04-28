@@ -5,7 +5,7 @@ import "../styles/login.css";
 import LoginImage from "../assets/login/signupill.png";
 import { Link } from "react-router-dom";
 
-function Login() {
+function Login() { 
 
   const [error, setError] = useState("");
   return (
